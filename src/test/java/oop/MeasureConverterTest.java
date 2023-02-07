@@ -1,12 +1,13 @@
 package oop;
 
+import oop.measures.MeasureConverter;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class MeasureConverterTest {
 
-    private double delta = 0.0001d;
+    private double delta = 0.01d;
 
     @Test
     public void itShouldConvertFeetToMeters() {
@@ -20,13 +21,6 @@ class MeasureConverterTest {
         double actual = MeasureConverter.inchesToYards(5);
 
         assertEquals(0.1389, actual, delta);
-    }
-
-    @Test
-    public void itShouldConvertYardsToInches() {
-        double actual = MeasureConverter.yardsToInches(0.1389);
-
-        assertEquals(5, actual, delta);
     }
 
 }

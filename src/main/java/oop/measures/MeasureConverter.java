@@ -1,4 +1,4 @@
-package oop;
+package oop.measures;
 
 public class MeasureConverter {
 
@@ -13,7 +13,4 @@ public class MeasureConverter {
         return inches * INCHES_YARDS_CONVERSION_FACTOR;
     }
 
-    public static double yardsToInches(double yards) {
-        return Double.valueOf(yards) / Double.valueOf(INCHES_YARDS_CONVERSION_FACTOR);
-    }
 }

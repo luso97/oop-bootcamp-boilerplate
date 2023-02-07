@@ -1,0 +1,17 @@
+package oop.measures;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+class MetersToCentimetersConverterTest {
+
+    @Test
+    public void itShouldConvertMetersToCentimeters() {
+
+        double actual = MetersToCentimetersConverter.convert(2);
+
+        assertEquals(200, actual);
+
+    }
+
+}
