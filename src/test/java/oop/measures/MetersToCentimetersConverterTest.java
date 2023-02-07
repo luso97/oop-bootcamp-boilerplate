@@ -8,7 +8,7 @@ class MetersToCentimetersConverterTest {
     @Test
     public void itShouldConvertMetersToCentimeters() {
 
-        double actual = MetersToCentimetersConverter.convert(2);
+        double actual = new MetersToCentimetersConverter().conversion(2);
 
         assertEquals(200, actual);
 
