@@ -15,4 +15,14 @@ class InchTest {
         assertEquals(new Inch(2), actual);
     }
 
+    @Test
+    public void itShouldSumInchesAndMeters() {
+        Unit inch = new Inch(2);
+        Unit meter = new Meter(1);
+
+        Unit expected = new Inch(41.37008);
+
+        assertEquals(expected, inch.add(meter));
+    }
+
 }

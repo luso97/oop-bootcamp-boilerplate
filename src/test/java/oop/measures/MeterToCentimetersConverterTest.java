@@ -3,7 +3,7 @@ package oop.measures;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class MetersToCentimetersConverterTest {
+class MeterToCentimetersConverterTest {
 
     @Test
     public void itShouldConvertMetersToCentimeters() {
